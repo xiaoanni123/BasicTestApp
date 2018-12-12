@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="changStatus">修改状态栏颜色</string>
+    <string name="testBT">测试按钮1</string>
+    <string name="showBasicUseWay_tv">文本控件的使用</string>
+    <string name="showBasicUseWay_bt">按钮控件的使用</string>
+</resources>

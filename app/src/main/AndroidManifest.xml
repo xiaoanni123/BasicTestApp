@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lanxumit.testapplication">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/LocalTestAppThem"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        android:resizeableActivity="false"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestStatusBarActivity" />
+        <activity android:name=".activity.TestOkGoActivity" />
+        <activity android:name=".activity.TestNotificationActivity" />
+        <activity
+            android:name=".activity.TestVideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.TestCreateActivity">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestUseUiActivity" />
+        <activity android:name=".activity.TestDataStoreActivity" />
+        <activity android:name=".activity.TestUseRealmActivity"></activity>
+    </application>
+
+</manifest>
